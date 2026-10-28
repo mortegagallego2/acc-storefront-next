@@ -1746,8 +1746,7 @@
         "placeholder": "Select a site...",
         "sites": {
             "RefArchGlobal": "Global (UK)",
-            "RefArch": "United States",
-            "Grocery": "Spain"
+            "RefArch": "United States"
         }
     },
     "security": {

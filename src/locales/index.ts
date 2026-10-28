@@ -18,7 +18,6 @@ import daDK from './da-DK';
 import deDE from './de-DE';
 import enGB from './en-GB';
 import enUS from './en-US';
-import es from './es';
 import esES from './es-ES';
 import fiFI from './fi-FI';
 import frFR from './fr-FR';
@@ -38,7 +37,6 @@ export default {
     'de-DE': deDE,
     'en-GB': enGB,
     'en-US': enUS,
-    es,
     'es-ES': esES,
     'fi-FI': fiFI,
     'fr-FR': frFR,
