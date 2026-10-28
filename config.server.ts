@@ -229,6 +229,18 @@ export default defineConfig<Config>(
                         ],
                         supportedCurrencies: ['USD'],
                     },
+                    {
+                        id: 'Grocery',
+                        defaultLocale: 'es',
+                        defaultCurrency: 'EUR',
+                        supportedLocales: [
+                            {
+                                id: 'es',
+                                preferredCurrency: 'EUR',
+                            },
+                        ],
+                        supportedCurrencies: ['EUR'],
+                    },
                 ],
                 // Source `sites` from the DAL when the matching Business Manager sync is
                 // enabled. On by default; the sites above stay the source of truth whenever
@@ -266,6 +278,7 @@ export default defineConfig<Config>(
             defaultSiteId: 'RefArchGlobal',
             siteAliasMap: {
                 RefArch: 'us',
+                Grocery: 'es',
                 RefArchGlobal: 'global',
             },
             seoFallback: {
@@ -405,6 +418,8 @@ export default defineConfig<Config>(
                     'sv-SE',
                     'zh-CN',
                     'zh-TW',
+                    'es',
+                    'es-ES',
                     'en-US',
                     'en-GB',
                 ], // Your supported languages, the fallback should be LAST
