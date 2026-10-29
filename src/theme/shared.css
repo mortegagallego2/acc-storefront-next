@@ -15,7 +15,7 @@
 @import './tokens/components.css';
 
 /* Brand theme — must stay after the tokens so it overrides them */
-@import './brands/salina.css';
+@import './brands/salitre.css';
 
 /* Animation keyframes */
 @import './animations.css';
