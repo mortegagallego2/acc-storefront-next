@@ -419,7 +419,7 @@ export default defineConfig<Config>(
             global: {
                 // TODO: Allow page specific customization while keeping global defaults, e.g.:
                 //   config.pages.search.components?.productListing ?? config.global.productListing
-                branding: { name: 'Salina', logoAlt: 'Home' },
+                branding: { name: 'Salitre', logoAlt: 'Home' },
                 productListing: {
                     defaultProductTileImgAspectRatio: 1,
                 },

@@ -1,16 +1,16 @@
 /*
- * Salina brand theme.
+ * Salitre brand theme.
  *
  * Imported LAST from `../shared.css`, so every `:root` value below overrides the template's
  * default tokens. To drop the brand: remove that `@import`, delete this folder and
- * `public/brand/salina/`, and point `src/lib/brand.ts` back at the template assets.
+ * `public/brand/salitre/`, and point `src/lib/brand.ts` back at the template assets.
  *
  * Palette — Tinta #14232E · Mar #2F6E73 · Arena #E6DBC6 · Sal #F4F1EC · Rebajas #C4553A
- * Typeface — Jost (self-hosted, OFL; see public/brand/salina/OFL-Jost.txt)
+ * Typeface — Jost (self-hosted, OFL; see public/brand/salitre/OFL-Jost.txt)
  */
 @font-face {
     font-family: 'Jost';
-    src: url('/brand/salina/jost-variable.woff2') format('woff2');
+    src: url('/brand/salitre/jost-variable.woff2') format('woff2');
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;

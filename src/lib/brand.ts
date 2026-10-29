@@ -16,13 +16,13 @@
 
 /**
  * Brand assets referenced from code (an `<img>` src, the favicon link and the font preload can't
- * live in CSS). Colors, typography and sizing live in `src/theme/brands/salina.css`.
+ * live in CSS). Colors, typography and sizing live in `src/theme/brands/salitre.css`.
  *
  * To switch brand, point these three at another folder under `public/`; the template defaults are
  * `/images/logo.svg`, `/favicon.ico` and `/fonts/sen-variable.woff2`.
  */
-import logo from '/brand/salina/logo.svg';
-import favicon from '/brand/salina/favicon.ico';
-import primaryFont from '/brand/salina/jost-variable.woff2';
+import logo from '/brand/salitre/logo.svg';
+import favicon from '/brand/salitre/favicon.ico';
+import primaryFont from '/brand/salitre/jost-variable.woff2';
 
 export { logo, favicon, primaryFont };
