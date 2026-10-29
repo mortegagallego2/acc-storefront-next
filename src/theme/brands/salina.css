@@ -1,0 +1,67 @@
+/*
+ * Salina brand theme.
+ *
+ * Imported LAST from `../shared.css`, so every `:root` value below overrides the template's
+ * default tokens. To drop the brand: remove that `@import`, delete this folder and
+ * `public/brand/salina/`, and point `src/lib/brand.ts` back at the template assets.
+ *
+ * Palette — Tinta #14232E · Mar #2F6E73 · Arena #E6DBC6 · Sal #F4F1EC · Rebajas #C4553A
+ * Typeface — Jost (self-hosted, OFL; see public/brand/salina/OFL-Jost.txt)
+ */
+@font-face {
+    font-family: 'Jost';
+    src: url('/brand/salina/jost-variable.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Re-declared here (not only as :root vars) because tailwind.css declares the fonts with
+ * `@theme inline`, which bakes the family into the `font-sans` utilities at build time. */
+@theme inline {
+    --font-sans: 'Jost', -apple-system, 'system-ui', 'Helvetica Neue', Arial, sans-serif;
+    --font-serif: 'Jost', Georgia, serif;
+    --font-mono: 'Jost', 'Courier New', monospace;
+}
+
+:root {
+    /* brand palette */
+    --brand-primary: #14232E; /* Tinta */
+    --brand-primary-hover: #2F6E73; /* Mar */
+    --brand-black: #14232E;
+    --brand-black-off: #1B2D3A;
+    --brand-black-charcoal: #2B3A45;
+    --brand-white-bone: #F4F1EC; /* Sal */
+    --brand-white-ivory: #FAF8F4;
+
+    /* core */
+    --foreground: #14232E;
+    --primary: #14232E;
+    --primary-foreground: #F4F1EC;
+    --secondary: #F4F1EC;
+    --secondary-foreground: #14232E;
+    --tertiary: #2F6E73;
+    --muted: #F4F1EC;
+    --muted-foreground: #3A4A55;
+    --muted-hover: #E9E3D8;
+    --accent: #E6DBC6; /* Arena */
+    --accent-foreground: #14232E;
+    --ring: #2F6E73;
+
+    /* header & navigation — light header, so the logo is shown as-is (no invert filter) */
+    --header-background: #F4F1EC;
+    --header-foreground: #14232E;
+    --header-border: rgba(20, 35, 46, 0.12);
+    --header-menu-hover-background: #14232E;
+    --header-menu-hover-foreground: #F4F1EC;
+    --header-menu-active-background: rgba(20, 35, 46, 0.06);
+    --header-menu-icon: rgba(20, 35, 46, 0.75);
+    --header-logo-filter: none;
+    /* logo height (mobile / lg+); the template default is 0.75rem / 1rem for its wide wordmark */
+    --header-logo-height: 1.75rem;
+    --header-logo-height-lg: 2.25rem;
+
+    /* footer */
+    --footer-background: #F4F1EC;
+    --footer-foreground: #14232E;
+}

@@ -117,7 +117,7 @@ import { PageViewTracker } from '@/analytics/page-view-tracker';
 import { buildSeoMetaDescriptors } from '@/utils/seo';
 
 // Assets
-import favicon from '/favicon.ico';
+import { favicon } from '@/lib/brand';
 
 // Fonts
 import { primaryFont } from '@/lib/fonts';
@@ -430,7 +430,7 @@ function ErrorPageContent({
                 <div className="section-container">
                     <div className="flex items-center gap-x-4 lg:gap-x-6 h-16">
                         <a href={homepageUrl} className="flex-shrink-0 flex items-center" data-testid="header-logo">
-                            <Logo className="h-3 lg:h-4 w-auto [filter:var(--header-logo-filter)]" />
+                            <Logo className="h-[var(--header-logo-height,0.75rem)] lg:h-[var(--header-logo-height-lg,1rem)] w-auto [filter:var(--header-logo-filter)]" />
                         </a>
                     </div>
                 </div>

@@ -21,7 +21,7 @@ import CartBadge from './cart-badge';
 import UserActions from './user-actions/user-actions';
 import WishlistIcon from './wishlist-icon';
 import { useTranslation } from 'react-i18next';
-import logo from '/images/logo.svg';
+import { logo } from '@/lib/brand';
 import { Button } from '@/components/ui/button';
 import { SparklesIcon } from '@/components/icons';
 import { useConfig } from '@salesforce/storefront-next-runtime/config';
@@ -104,7 +104,7 @@ export default function Header({
                             <img
                                 src={logo}
                                 alt={t('logoAlt')}
-                                className="h-3 lg:h-4 w-auto [filter:var(--header-logo-filter)]"
+                                className="h-[var(--header-logo-height,0.75rem)] lg:h-[var(--header-logo-height-lg,1rem)] w-auto [filter:var(--header-logo-filter)]"
                             />
                         </Link>
                         <div className="flex-1" />
@@ -129,7 +129,7 @@ export default function Header({
                         <img
                             src={logo}
                             alt={t('logoAlt')}
-                            className="h-3 lg:h-4 w-auto [filter:var(--header-logo-filter)]"
+                            className="h-[var(--header-logo-height,0.75rem)] lg:h-[var(--header-logo-height-lg,1rem)] w-auto [filter:var(--header-logo-filter)]"
                         />
                     </Link>
 

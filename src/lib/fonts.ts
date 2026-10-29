@@ -15,6 +15,4 @@
  */
 
 /** The site's primary font, bound to `<body>` in `root.tsx`. */
-import sen from '/fonts/sen-variable.woff2';
-
-export const primaryFont = sen;
+export { primaryFont } from '@/lib/brand';

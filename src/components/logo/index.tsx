@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-// Brand logo. Renders the `/images/logo.svg` raster asset. A brand can ship a
+// Brand logo. Renders the active brand's logo (see `@/lib/brand`). A brand can ship a
 // bespoke (e.g. inline-SVG) logo by overriding this whole component at
 // `@/components/logo`. Keeping the logo behind a component (instead of a
 // hardcoded `<img>`) lets the error page and any other consumer pick up the
 // active brand's logo.
-import logo from '/images/logo.svg';
+import { logo } from '@/lib/brand';
 
 interface LogoProps {
     className?: string;
